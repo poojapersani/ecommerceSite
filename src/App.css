@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gainsboro;
+  /* margin: 50px; */
+  /* padding: 10px; */
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  list-style-type: none;
+  padding: 10px;
+}
+.elogo {
+  width: 100px;
+  height: 88px;   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cat-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px 160px;
+  list-style-type: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cat-item {
+  font-size: 20px;
+  font-weight:900;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cat-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 10px;
+  width: 300px;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.gadget {
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Allcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 100px 10px;
+  gap: 0px 100px;
+  align-items: center;
+}
+.itemName {
+  font-size: 20px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: 700;
+}
+.itemPrice  {
+  font-size: 16px;
+  font-weight: 300;
+  font-family:  'Times New Roman', serif;
+}
+.itemBrand {
+  font-size: 16px;
+  font-weight: 300;
+  font-family:  'Times New Roman', serif;
+}
+.active {
+  background-color: gainsboro;
+  padding: 5px 5px;
+}
+.list-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 55px;
+}
+.list-detail:hover {
+  background-color: grey;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px 20px;
 }
